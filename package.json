@@ -14,6 +14,8 @@
     "nuxt": "^2.15.3"
   },
   "devDependencies": {
+    "@nuxtjs/device": "^2.0.1",
+    "@nuxtjs/google-fonts": "^1.3.0",
     "@nuxtjs/tailwindcss": "^4.0.1",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",

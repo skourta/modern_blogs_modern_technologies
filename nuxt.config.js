@@ -24,6 +24,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    "~/plugins/click_outside.js"
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -33,6 +34,12 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    ['@nuxtjs/google-fonts', {
+      families: {
+        Quicksand: [300, 500, 700]
+      }
+    }],
+    '@nuxtjs/device',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
