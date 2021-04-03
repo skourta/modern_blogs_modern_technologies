@@ -8,15 +8,30 @@
     <transition name="fade">
       <ul
         v-if="showMenu"
-        class="md:flex md:flex-row z-10 relative transition-all"
+        class="flex flex-col bg-primary-500 text-white p-4 rounded z-10 relative items-center justify-center hover:text-primary-600"
       >
-        <li class="pr-5"><a> Services </a></li>
-        <li class="pr-5"><a>Porfolio</a></li>
-        <li class="pr-5"><a>About</a></li>
-        <li><a>Contact</a></li>
+        <li class="nav_link"><a> Services </a></li>
+        <li class="nav_link"><a>Porfolio</a></li>
+        <li class="nav_link"><a>About</a></li>
+        <li class="nav_link"><a>Contact</a></li>
       </ul>
     </transition>
   </header>
+
+  <aside
+    v-else
+    class="w-1/5 flex flex-col py-4 m-2 items-center text-xl font-sans font-bold"
+  >
+    <p class="mb-4">Modern Blog</p>
+    <ul
+      class="flex flex-col font-bold p-4 rounded items-center justify-center w-full"
+    >
+      <li class="nav_link"><a> Services </a></li>
+      <li class="nav_link"><a>Porfolio</a></li>
+      <li class="nav_link"><a>About</a></li>
+      <li class="nav_link"><a>Contact</a></li>
+    </ul>
+  </aside>
 </template>
 
 <script>
@@ -36,4 +51,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.nav_link {
+  @apply py-2 hover:text-primary-600 cursor-pointer;
+}
+</style>

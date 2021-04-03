@@ -1,9 +1,18 @@
 <template>
-  <div class="flex flex-col w-screen overflow-hidden md:flex-row">
+  <div class="flex flex-col w-screen overflow-hidden md:flex-row font-sans">
     <nav-panel />
-    <Nuxt />
+    <Nuxt class="bg-gray-50 rounded-2xl" />
   </div>
 </template>
+
+<script>
+import NavPanel from '~/components/global/NavPanel'
+export default {
+  components: {
+    NavPanel,
+  },
+}
+</script>
 
 <style>
 html {
