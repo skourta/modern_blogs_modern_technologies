@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col w-screen overflow-hidden md:flex-row font-sans">
     <nav-panel />
-    <Nuxt class="bg-gray-50 rounded-2xl" />
+    <Nuxt class="bg-gray-50 rounded-2xl container min-h-screen" />
   </div>
 </template>
 
@@ -69,5 +69,15 @@ html {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+
+.title {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 3rem;
+  color: #35495e;
+  letter-spacing: 1px;
 }
 </style>

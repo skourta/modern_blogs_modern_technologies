@@ -1,8 +1,9 @@
 <template>
-  <div class="container">
-    <div class="flex flex-col">
-      <blog-card></blog-card>
-    </div>
+  <div class="blog_contauiner">
+    <blog-card></blog-card>
+    <blog-card></blog-card>
+    <blog-card></blog-card>
+    <blog-card></blog-card>
   </div>
 </template>
 
@@ -19,23 +20,11 @@ export default {
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.blog_contauiner {
+  @apply flex flex-col items-center md:flex-row gap-4 md:flex-wrap justify-between overflow-hidden p-4;
+  :last-child {
+    @apply md:mr-auto;
+  }
 }
 
 .subtitle {
