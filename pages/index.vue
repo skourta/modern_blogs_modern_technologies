@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">modern blogs modern technologies</h1>
+      <blog-card></blog-card>
+      <!-- <h1 class="title">modern blogs modern technologies</h1> -->
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -26,7 +26,10 @@
 </template>
 
 <script>
-export default {}
+import BlogCard from '~/components/Global/BlogCard.vue'
+export default {
+  components: { BlogCard },
+}
 </script>
 
 <style>
