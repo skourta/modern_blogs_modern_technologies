@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-4/5 shadow-sm hover:shadow-xl transition-all flex flex-col p-4 rounded-lg md:max-w-lg"
+    class="w-4/5 shadow-sm hover:shadow-xl transition-all flex flex-col p-4 rounded-lg md:max-w-md"
     style="height: 60vh"
   >
     <img

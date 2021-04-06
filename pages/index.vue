@@ -1,26 +1,7 @@
 <template>
   <div class="container">
-    <div>
+    <div class="flex flex-col">
       <blog-card></blog-card>
-      <!-- <h1 class="title">modern blogs modern technologies</h1> -->
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
     </div>
   </div>
 </template>

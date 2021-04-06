@@ -8,7 +8,7 @@
     <transition name="fade">
       <ul
         v-if="showMenu"
-        class="flex flex-col bg-primary-500 text-white p-4 rounded z-10 relative items-center justify-center hover:text-primary-600"
+        class="flex flex-col bg-white shadow-xl p-4 rounded z-10 relative items-center justify-center"
       >
         <li class="nav_link"><a> Services </a></li>
         <li class="nav_link"><a>Porfolio</a></li>
