@@ -1,9 +1,10 @@
 <template>
   <div class="blog_contauiner">
-    <blog-card></blog-card>
-    <blog-card></blog-card>
-    <blog-card></blog-card>
-    <blog-card></blog-card>
+    <blog-card
+      v-for="article in articles"
+      :key="article.slug"
+      :blog="article"
+    ></blog-card>
   </div>
 </template>
 
@@ -11,6 +12,11 @@
 import BlogCard from '~/components/global/BlogCard.vue'
 export default {
   components: { BlogCard },
+  async asyncData({ $content }) {
+    const articles = await $content('articles').fetch()
+
+    return { articles }
+  },
 }
 </script>
 
@@ -21,7 +27,7 @@ export default {
 }
 */
 .blog_contauiner {
-  @apply flex flex-col items-center md:flex-row gap-4 md:flex-wrap justify-between overflow-hidden p-4;
+  @apply flex flex-col  md:flex-row gap-4 md:flex-wrap justify-between overflow-hidden p-4;
   :last-child {
     @apply md:mr-auto;
   }

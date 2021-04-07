@@ -17,7 +17,7 @@
       </p>
       <button
         class="bg-blue-100 px-4 py-2 text-xs font-semibold tracking-wider text-blue-600 rounded hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-        @click="$nuxt.$router.push('/posts/test')"
+        @click="$nuxt.$router.push(`/articles/${blog.slug}`)"
       >
         See More
       </button>
