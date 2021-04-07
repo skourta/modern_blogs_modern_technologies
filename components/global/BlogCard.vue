@@ -4,13 +4,15 @@
     style="height: 60vh"
   >
     <img
-      class="w-full h-1/2 object-cover rounded-lg"
+      class="w-full h-1/2 object-cover rounded-lg m-0"
       :src="blog.cover"
       alt="cover image"
     />
     <div class="flex flex-col gap-3 items-start h-1/2 py-4">
-      <h2 class="font-bold">{{ blog.name }}</h2>
-      <p class="flex-grow overflow-hidden overflow-ellipsis text-justify">
+      <h3 class="font-bold m-0">{{ blog.name }}</h3>
+      <p
+        class="flex-grow overflow-hidden overflow-ellipsis text-justify text-sm"
+      >
         {{ blog.description }}
       </p>
       <button

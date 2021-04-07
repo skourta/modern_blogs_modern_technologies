@@ -29,13 +29,15 @@
     <article>
       <nuxt-content class="prose lg:prose-xl" :document="article" />
     </article>
+    <!-- <blog-card></blog-card> -->
   </div>
 </template>
 
 <script>
-import Tag from '~/components/Global/Tag.vue'
+import BlogCard from '~/components/global/BlogCard.vue'
+import Tag from '~/components/global/Tag.vue'
 export default {
-  components: { Tag },
+  components: { Tag, BlogCard },
   name: 'PostPage',
   async asyncData({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()

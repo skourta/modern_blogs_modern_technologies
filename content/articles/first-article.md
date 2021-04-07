@@ -11,6 +11,8 @@ date: 'April 07th 2021'
 tags: ['Traveling', 'Amazing places']
 ---
 
+<blog-card></blog-card>
+
 ## This is a heading
 
 This is some more info

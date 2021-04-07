@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import BlogCard from '~/components/Global/BlogCard.vue'
+import BlogCard from '~/components/global/BlogCard.vue'
 export default {
   components: { BlogCard },
 }
